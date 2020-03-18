@@ -1,0 +1,368 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+	padding: 0;	
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $text;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+// font-family: 'Myriad-Pro';
+// font-family: 'Dala-Moa';
+// font-family: 'Futura';
+// font-family: "Dala-Floda";
+// font-family: 'FuturaBQ';
+// font-family: 'Futura-Book';
+
+body {  
+  font-weight: 400;
+  font-size: 14px;  
+	color: $text;
+	background-color: $bg;
+	overflow-x: hidden;	
+}
+input {
+  border: none;
+  outline: none;
+  display: block;
+}
+.container {  
+  max-width: 1430px;
+  margin: 0 auto;
+	padding: 0 15px; 
+	
+}
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+	padding: 0 30px;		
+}
+///////master
+.master {	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.94;
+	max-width: 100%;
+	height: 1142px;
+}
+.master__inner {
+	position: relative;
+}
+.master__text {	
+	max-width: 400px;
+	width: 100%;	
+	position: absolute;
+	font-family: 'Myriad-Pro';
+	left: 20px;	
+	top: 810px;
+	font-size: 20px;
+	line-height: 31px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	color: #fbfafa;	
+	z-index: 10;
+	&:before {
+		position: absolute;
+		content: "";
+		top: -20px;
+		width: 42px;
+		height: 1px;
+		background-color: #fbfafa;	
+	}
+}
+//////////brand-card
+.brand-card__item-text ,
+.brand-card__item-title {
+	font-size: 21px;
+	line-height: 33px;	
+	letter-spacing: 0.02em;
+	color: #000000;
+}
+.brand-card__item-title {
+	font-family: "Dala-Floda";
+	font-weight: 500;
+}
+.brand-card__item-text {
+	font-family: 'Dala-Moa';
+	font-weight: 300;	
+	max-width: 430px;
+	width: 100%;
+}
+.brand-card {
+	padding-top: 35px;
+	padding-bottom: 220px;
+}
+.brand-card__items {
+	display: flex;
+	justify-content: center;
+}
+.brand-card__items-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.brand-card__head {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	h2 {
+		position: relative;
+		padding-top: 25px;
+		margin: 0px 130px 0px;
+		font-size: 58px;
+		line-height: 60px;
+		font-weight: 500;
+		font-family: "Dala-Floda";
+		&::before {
+			position: absolute;
+			content: "";
+			height: 156px;
+			width: 1px;
+			left: -18px;
+			top: 0;
+			background-color: #000;
+			transform: rotate(30deg);
+		}
+	}
+	.brand-card__desc {
+		max-width: 544px;
+		width: 100%;
+		font-size: 21px;
+		font-family: 'Futura-Book';
+		letter-spacing: 0.02em;
+		line-height: 33px;
+		font-weight: 400;
+		color: #000000;
+	}
+}
+.brand-card__item--ring {
+	margin-bottom: 70px;
+}
+
+.brand-card__ring-img {		
+	margin-bottom: 30px;
+	img {
+		max-width: 549px;
+		width: 100%;
+		height: auto;
+		padding: 10px;
+		background-color: #f1f1e9;
+		transform: rotate(1deg);
+	}
+}
+.brand-card__item--hands {
+	position: relative;
+	margin-left: 135px;
+	.brand-card__item-content {
+		position: absolute;
+		content: "";
+		right: -400px;
+		top: 285px;
+	}
+}
+
+.brand-card__hands-img {
+	margin-right: 60px;
+	background-color: #f1f1e9;
+	padding: 10px;
+	transform:skewY(-1deg);
+	img {
+		max-width: 569px;	
+		width: 100%;			
+		height: auto;								
+	}
+}
+.brand-card__item--face {	
+	margin-top: 335px;		
+	.brand-card__item-content {
+		margin-left: 270px;
+	}
+}
+.brand-card__face-img {
+	margin-bottom: 30px;
+	background-color: #f1f1e9;	
+	padding: 10px;
+	transform:skewY(-1deg);
+	img {
+		max-width: 720px;
+		width: 100%;
+		height: auto;		
+	}
+	}
+	
+////video
+.video {	
+	max-width: 100%;
+	height: 90vh;	
+	text-align: center;	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.video__content {
+	padding-top: 100px;
+}
+.video__title {	
+	margin-bottom: 50px;
+	font-size: 44px;
+	font-family: 'Myriad-Pro';
+	color: #fff;
+}	
+////////slider
+.rings-slider {
+	padding: 110px 0px;
+	text-align: center;
+}
+.rings-slider__content {
+	margin-bottom: 70px;
+}
+.rings-slider__title {
+	font-family: "Dala-Floda";
+	margin-bottom: 35px;
+	font-size: 58px;
+	line-height: 64px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	color: #000000;
+}
+.rings-slider__text {
+	max-width: 930px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Futura-Book';
+	font-size: 21px;
+	line-height: 33px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+}
+.rings-slider__item {
+	padding: 10px;	
+	transition:  $trans;	
+	img {
+		margin: 0 auto;	
+		padding-left: 10px;
+		min-height: 179px;
+		max-width: 222px;
+	}	
+	&:hover {
+		box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.69);
+	}
+}
+.rings-item__name {
+	margin: 30px 0px;
+	font-family: 'Futura-Book';
+	font-size: 20px;	
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+.rings-item__link {
+	position: relative;
+	padding-bottom: 13px;
+	font-size: 15px;	
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	transition: $trans;
+	&:hover {
+		color: #4949ab;
+	}
+	&:after {
+		position: absolute;
+		position: absolute;
+		content: "";
+		bottom: 0;
+		left: 0;
+		width: 96px;
+		height: 2px;
+		background-color: $text;	
+		opacity: .6;
+	}
+}
+.ring-slider__wrapper {
+	margin-bottom: 70px;
+}
+.rings-slider__btn {
+	position: relative;	
+	max-width: 350px;
+	width: 100%;	
+	padding: 22px 27px;
+	border: 1px solid #000;
+	font-size: 15px;
+	font-family: 'Futura';
+	color: #000000;
+	font-weight: 500;
+	transition: $trans;
+	overflow: hidden;
+	span {
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: $trans;
+  }
+  span:nth-child(1) {
+    transform: translateX(-100%);
+  }
+  &:hover span:nth-child(1) {
+    transform: translateX(0);    
+  }
+  span:nth-child(2) {
+    transform: translateX(0);
+  }
+  &:hover span:nth-child(2) {
+    transform: translateX(100%);    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media";

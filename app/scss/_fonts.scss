@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Myriad-Pro';
+	src: url('../fonts/MyrialPro/MyriadPro-Regular.eot');
+	src: url('../fonts/MyrialPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MyrialPro/MyriadPro-Regular.woff') format('woff'),
+	url('../fonts/MyrialPro/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Dala-Moa';
+	src: url('../fonts/DalaMoa/DalaMoa-Light.eot');
+	src: url('../fonts/DalaMoa/DalaMoa-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/DalaMoa/DalaMoa-Light.woff') format('woff'),
+	url('../fonts/DalaMoa/DalaMoa-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	}
+	@font-face {
+		font-family: 'Futura';
+		src: url('../fonts/Futura/FuturaMediumC.eot');
+		src: url('../fonts/Futura/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura/FuturaMediumC.woff') format('woff'),
+		url('../fonts/Futura/FuturaMediumC.ttf') format('truetype');
+		font-weight: 500;
+		font-style: normal;
+		}
+	@font-face {font-family: "Dala-Floda";
+		src: url("../fonts/DalaFloda/276a8e0c8ad2957f115efaaf95b96224.eot"); /* IE9*/
+		src: url("../fonts/DalaFloda/276a8e0c8ad2957f115efaaf95b96224.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/DalaFloda/276a8e0c8ad2957f115efaaf95b96224.woff2") format("woff2"), /* chrome、firefox */
+		url("../fonts/DalaFloda/276a8e0c8ad2957f115efaaf95b96224.woff") format("woff"), /* chrome、firefox */
+		url("../fonts/DalaFloda/276a8e0c8ad2957f115efaaf95b96224.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		url("../fonts/DalaFloda/276a8e0c8ad2957f115efaaf95b96224.svg") format("svg"); /* iOS 4.1- */
+	}
+	@font-face {
+		font-family: 'FuturaBQ';
+		src: url('../fonts/FuturaBQ-DemiBold.eot');
+		src: local('☺'), url('../fonts/FuturaBQ-DemiBold.woff') format('woff'), url('fonts/FuturaBQ-DemiBold.ttf') format('truetype'), url('../fonts/FuturaBQ-DemiBold.svg') format('svg');
+		font-weight: 400;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Futura-Book';
+		src: url('../fonts/FuturaBK/FuturaBookC.eot');
+		src: url('../fonts/FuturaBK/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaBK/FuturaBookC.woff') format('woff'),
+		url('../fonts/FuturaBK/FuturaBookC.ttf') format('truetype');
+		font-weight: 400;
+		font-style: normal;
+		}
